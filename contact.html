@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <title>Contact Form</title>
+</head>
+
+<body>
+    <h1>Contact Form</h1>
+    <form method="GET">
+        <!-- GET POST  -->
+        <p>Name:<br>
+            <input type="text" name="name" placeholder="Name" size="15" maxlength="20">
+        </p>
+        <p>Email:<br>
+            <input type="email" name="email" placeholder="Email" size="15" maxlength="20">
+        </p>
+        <p>Subject:<br>
+            <input type="text" name="subject" placeholder="Subject" size="15" maxlength="20">
+        </p>
+        <p>
+            To Message
+            <input type="radio" name="contact_team" value="front_office" checked>Front Office
+            <input type="radio" name="contact_team" value="support">Support Team
+        </p>
+        <p>Message:<br>
+            <textarea cols="35" rows="4" placeholder="Enter your Message"></textarea>
+        </p>
+        <input type="submit" value="Send Message">
+        <!-- Value is used as Default -->
+    </form>
+</body>
+
+</html>
