@@ -8,22 +8,36 @@
     <h1>Contact Form</h1>
     <form method="GET">
         <!-- GET POST  -->
-        <p>Name:<br>
-            <input type="text" name="name" placeholder="Name" size="15" maxlength="20">
-        </p>
-        <p>Email:<br>
-            <input type="email" name="email" placeholder="Email" size="15" maxlength="20">
-        </p>
-        <p>Subject:<br>
-            <input type="text" name="subject" placeholder="Subject" size="15" maxlength="20">
-        </p>
         <p>
-            To Message
-            <input type="radio" name="contact_team" value="front_office" checked>Front Office
-            <input type="radio" name="contact_team" value="support">Support Team
+            <label>Name:
+                <input type="text" name="name" placeholder="Name" size="15" maxlength="20">
+            </label>
         </p>
-        <p>Message:<br>
-            <textarea cols="35" rows="4" placeholder="Enter your Message"></textarea>
+        <br>
+        <p>
+            <label>Email:
+                <input type="email" name="email" placeholder="Email" size="15" maxlength="20">
+            </label>
+        </p>
+        <br>
+        <label>Subject:
+            <input type="text" name="subject" placeholder="Subject" size="15" maxlength="20">
+        </label>
+        <br>
+        <p>
+            <label>
+                To Message
+                <input type="radio" name="contact_team" id="front_office" value="front_office" checked><label
+                    for="front_office">Front Office</label>
+                <input type="radio" name="contact_team" id="support_team" value="support_team"><label
+                    for="support_team">Support Team</label>
+            </label>
+        </p>
+        <br>
+        <p>
+            <label>Message:
+                <textarea cols="35" rows="4" placeholder="Enter your Message"></textarea>
+            </label>
         </p>
         <input type="submit" value="Send Message">
         <!-- Value is used as Default -->
